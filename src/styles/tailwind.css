@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #14B8A6; /* teal-500 */
+    --color-primary-light: #2DD4BF; /* teal-400 */
+    --color-primary-dark: #0D9488; /* teal-600 */
+    
+    /* Neutral Colors */
+    --color-white: #FFFFFF; /* white */
+    --color-gray-50: #F9FAFB; /* gray-50 */
+    --color-gray-100: #F3F4F6; /* gray-100 */
+    --color-gray-200: #E5E7EB; /* gray-200 */
+    --color-gray-300: #D1D5DB; /* gray-300 */
+    --color-gray-500: #6B7280; /* gray-500 */
+    --color-gray-700: #374151; /* gray-700 */
+    --color-gray-900: #111827; /* gray-900 */
+    
+    /* Semantic Colors */
+    --color-success: #22C55E; /* green-500 */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-error: #EF4444; /* red-500 */
+    --color-info: #3B82F6; /* blue-500 */
+    --color-purple: #A855F7; /* purple-500 */
+    
+    /* Shadows */
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.08);
+    
+    /* Border Radius */
+    --radius-card: 12px;
+    --radius-button: 8px;
+  }
+}
+
+@layer components {
+  /* Typography Classes */
+  .display-large {
+    @apply text-4xl font-display font-bold;
+  }
+  
+  .display-medium {
+    @apply text-3xl font-display font-semibold;
+  }
+  
+  .display-small {
+    @apply text-2xl font-display font-semibold;
+  }
+  
+  .heading-1 {
+    @apply text-xl font-sans font-semibold;
+  }
+  
+  .heading-2 {
+    @apply text-lg font-sans font-medium;
+  }
+  
+  .body-large {
+    @apply text-base font-sans font-normal;
+  }
+  
+  .body-medium {
+    @apply text-sm font-sans font-normal;
+  }
+  
+  .body-small {
+    @apply text-xs font-sans font-normal;
+  }
+  
+  .button-text {
+    @apply text-sm font-sans font-medium;
+  }
+  
+  .label {
+    @apply text-xs font-sans font-medium;
+  }
+}
